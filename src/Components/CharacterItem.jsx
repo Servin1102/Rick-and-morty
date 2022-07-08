@@ -15,9 +15,28 @@ const CharacterItem = ({ locationurl }) => {
 
     return (
         <div>
-            <li>{characterdata.name}
-            <img src={characterdata.image} alt="" />
-            </li>
+            <div className="container mt-5">
+          <div className="row">
+          <div className="col-md-6">
+            <div className="cards">
+              <img src={characterdata.image} alt="" />
+              <div className="info">
+                <p>
+                  <b>{characterdata?.name}</b>
+                </p>
+                <p>
+                  <span className="circle-green"></span>
+                  {characterdata.status} - {characterdata.species}
+                </p>
+                <p className="description">origin:</p>
+                <p>{characterdata.origin?.name}</p>
+                <p className="description">Episodes where appear:</p>
+                <p>{characterdata.episode?.length}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
         </div>
     );
 };

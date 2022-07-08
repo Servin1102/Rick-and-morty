@@ -50,7 +50,7 @@ h3{
 .cards{
   display: flex;
   background: rgb(0, 0, 0, 0.2);
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   border-radius: 10px;
   text-align: left;
   height: 200px;
