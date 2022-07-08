@@ -23,10 +23,10 @@ const CharacterItem = ({ locationurl }) => {
   }
 
   return (
-    <div>
+    
       <div className="container mt-5">
         <div className="row">
-          <div className=" col-md-6">
+          <div className="col-sm-12 col-md-6 col-lg-4">
             <div className="cards">
               <img src={characterdata.image} alt="" />
               <div className="info">
@@ -46,7 +46,7 @@ const CharacterItem = ({ locationurl }) => {
           </div>
         </div>
       </div>
-    </div>
+    
   );
 };
 

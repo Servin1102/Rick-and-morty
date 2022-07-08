@@ -44,7 +44,8 @@ const Location = () => {
           {
             location.residents?.map(locationurl => (
               
-              <CharacterItem locationurl={locationurl} key={locationurl}/>
+             <CharacterItem locationurl={locationurl} key={locationurl}/>
+             
             ))
           }
         </ul>
