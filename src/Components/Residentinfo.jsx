@@ -6,9 +6,9 @@ import axios from "axios";
 const Residentinfo = ({ resident }) => {
   return (
     <li >
-      <div className="container-fluid">
-          <div className="row"></div>
-      <div className="col-md-4">
+      <div className="container">
+          <div className="row">
+          <div className="col-md-6">
             <div className="cards">
               <img src={resident.image} alt="" />
               <div className="info">
@@ -23,6 +23,7 @@ const Residentinfo = ({ resident }) => {
                 <p>{resident.origin.name}</p>
                 <p className="description">Episodes where appear:</p>
                 <p>{resident.episode.length}</p>
+                </div>
               </div>
             </div>
           </div>

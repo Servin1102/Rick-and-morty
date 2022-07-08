@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
-const Rick = () => {
+const Location = () => {
   const [location, setlocation] = useState({});
   const [searchlocation, setsearchlocation] = useState("");
 
@@ -39,13 +39,20 @@ const Rick = () => {
                 <b>Population: </b> {location.residents?.length}
             </div>
         </div>
+        <ul>
+          {
+            location.residents?.map(locationurl => (
+              <li key={locationurl}>{locationurl}</li>
+            ))
+          }
+        </ul>
       
       
       
     </div>
   );
 };
-export default Rick;
+export default Location;
 
 
 

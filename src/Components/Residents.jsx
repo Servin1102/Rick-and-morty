@@ -18,13 +18,12 @@ const Residents = () => {
     <div>
       <h3>Residents</h3>
       <ul>
-        
-            
             {residents.map((resident) => (
-              <Residentinfo resident={resident} />
+              <Residentinfo resident={resident} /> 
             ))}
           
       </ul>
+      
     </div>
   );
 };
