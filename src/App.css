@@ -55,7 +55,7 @@ h3{
 }
 
 .container-cards{
-  width: 380px;
+  width: 400px;
   height: auto;
   justify-content: center;
   margin: auto;
@@ -120,4 +120,12 @@ li{
   font-size: .8rem;
     margin-bottom: 2px;
     color: hsla(0,0%,100%,.4);
+}
+
+ul{
+  padding: 0;
+}
+
+.pad{
+  padding: 0;
 }

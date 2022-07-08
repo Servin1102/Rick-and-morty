@@ -29,15 +29,17 @@ const Location = () => {
       <div className="m-5">
       <h2>{location.name}</h2>
       </div>
-        <div className="row p-1">
-            <div className="col-sm-4 text-center">
+      <div className="container">
+        <div className="row">
+            <div className="col-sm-4 pad text-center">
                 <b>Type: </b> {location.type}
             </div>
-            <div className="col-sm-4 text-center">
+            <div className="col-sm-4 pad text-center">
                 <b>Dimension: </b> {location.dimension}
             </div>
-            <div className="col-sm-4 text-center">
+            <div className="col-sm-4 pad text-center">
                 <b>Population: </b> {location.residents?.length}
+            </div>
             </div>
         </div>
         <ul>
