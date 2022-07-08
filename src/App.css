@@ -54,17 +54,25 @@ h3{
   font-size: 2rem;
 }
 
+.container-cards{
+  width: 400px;
+  height: auto;
+  justify-content: center;
+  margin: auto;
+  margin-top: 2rem;
+  display: inline-block;
+
+}
 
 .cards{
   display: flex;
-  /* flex-direction: row; */
   background: rgb(0, 0, 0, 0.2);
   box-shadow: 2px 2px 4px 2px rgba(253, 4, 241, 0.466);
   margin-bottom: 5px;
   border-radius: 10px;
   text-align: left;
-  height: auto;
-  width: 90%;
+  height: 220px;
+  width: 90%
 }
 .cards img{
     border-top-left-radius: 10px;
