@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import CharacterItem from "./CharacterItem";
 
 const Location = () => {
   const [location, setlocation] = useState({});
@@ -42,7 +43,8 @@ const Location = () => {
         <ul>
           {
             location.residents?.map(locationurl => (
-              <li key={locationurl}>{locationurl}</li>
+              
+              <CharacterItem locationurl={locationurl} key={locationurl}/>
             ))
           }
         </ul>
